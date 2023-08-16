@@ -4,10 +4,10 @@
 
 
 .label {
-    @apply flex justify-between items-center;
+    @apply flex justify-between items-center text-sm md:text-base;
 }
 
 .input {
-    @apply border border-black p-1 my-1 rounded;
+    @apply w-40 md:w-48 border border-black p-1 my-1 ml-2 rounded;
 }
 

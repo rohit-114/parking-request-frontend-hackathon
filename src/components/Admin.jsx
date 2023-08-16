@@ -22,12 +22,13 @@ const Admin = () => {
   return (
     <div>
       <h1>Parking Requests</h1>
-      <Table>
+
+      <Table responsive>
         <thead>
           <tr>
             <th>Sr No</th>
             <th>Parking Requests</th>
-            <th>Employee emailid</th>
+            <th>Employee Email</th>
             <th>Vehicle Type</th>
             <th>Vehicle Number</th>
             <th>Parking From Date</th>
@@ -49,6 +50,7 @@ const Admin = () => {
           ))}
         </tbody>
       </Table>
+
       <AdminForm />
     </div>
   );

@@ -70,7 +70,7 @@ const EmployeePortal = () => {
       <div className="flex justify-center ">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-1/3 p-5 rounded border shadow-md bg-white m-5"
+          className="md:flex md:flex-col p-4 md:p-5 mx-2 my-4 md:m-5 rounded border shadow-md bg-white"
         >
           <label className="label">
             Employee Name:
@@ -84,7 +84,7 @@ const EmployeePortal = () => {
             />
           </label>
           <label className="label">
-            Employee email:
+            Employee Email:
             <input
               name="id"
               className="input"
@@ -99,7 +99,7 @@ const EmployeePortal = () => {
             <select
               name="vehicleType"
               type="text"
-              className="input w-48"
+              className="input"
               value={formData.vehicleType}
               onChange={handleChange}
             >
@@ -122,7 +122,7 @@ const EmployeePortal = () => {
           <label className="label">
             Parking from Date:
             <DatePicker
-              className="input w-48"
+              className="input"
               selected={startDate}
               onChange={(date) => setStartDate(date)}
               minDate={new Date()}
@@ -134,7 +134,7 @@ const EmployeePortal = () => {
           <label className="label">
             Parking to Date:
             <DatePicker
-              className="input w-48"
+              className="input"
               selected={endDate}
               onChange={(date) => setEndDate(date)}
               minDate={startDate}
@@ -144,13 +144,13 @@ const EmployeePortal = () => {
             />
           </label>
           <div className="flex justify-end">
-            <button className="border-2 rounded bg-green-500 border-green-500 text-white p-1 mx-6 my-3">
+            <button className="border-2 rounded bg-green-500 border-green-500 text-white p-1 mx-6 my-3 text-sm md:text-base">
               Submit
             </button>
 
             <button
               onClick={clearInputs}
-              className="border-2 rounded bg-red-500 border-red-500 text-white p-1 mx-2 my-3"
+              className="border-2 rounded bg-red-500 border-red-500 text-white p-1 mx-2 my-3 text-sm md:text-base"
             >
               Clear
             </button>
